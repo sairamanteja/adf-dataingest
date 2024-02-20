@@ -1,0 +1,25 @@
+{
+	"name": "Ds_http_delimeter",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_http_git",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Http"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "sairamanteja/pratice/dev/customers-100.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
